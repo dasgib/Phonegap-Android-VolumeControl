@@ -35,7 +35,24 @@ var VolumeControl = {
 			'VolumeControl',
 			'toggleMuteVolume',
 			[vol]);
+	},
+	setStream: function(stream, successCallback, failureCallback){
+		return exec(
+			successCallback,
+			failureCallback,
+			'VolumeControl',
+			'setStream',
+			[stream]);
 	}
 };
+
+VolumeControl.STREAM_ACCESSIBILITY = 10;
+VolumeControl.STREAM_ALARM = 4;
+VolumeControl.STREAM_DTMF = 8;
+VolumeControl.STREAM_MUSIC = 3;
+VolumeControl.STREAM_NOTIFICATION = 5;
+VolumeControl.STREAM_RING = 2;
+VolumeControl.STREAM_SYSTEM = 1;
+VolumeControl.STREAM_VOICE_CALL = 0;
 
 module.exports = VolumeControl;
