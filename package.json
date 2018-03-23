@@ -1,0 +1,9 @@
+{
+  "name": "Phonegap-Android-VolumeControl",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "dependencies": {
+    "cordova-android": "^3.0.0"
+  }
+}
